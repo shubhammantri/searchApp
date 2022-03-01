@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchApp</title>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen"> Search me a wikipedia powered search engine</h1>
+        <section>
+           <h2 class="offscreen">Search term Entry</h2>
+           <div class="logo" aria-hidden="true">
+               search me
+           </div>
+           <form id="searchBar" class="searchBar">
+               <label for="search" class="offscreen">Enter a search term</label>
+                <input id="search" type="text" autocomplete="off" />
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    x
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit Button"></button>
+            </form>
+
+        </section>
+        <section class="results">
+            <h2 class="offscreen"> Search results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div class="searchResults" id="searchResults">
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Dachsund</a>
+                    </div>
+                    
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="" alt="Dachsund">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span aria-label="hidden">&lt;&lt;</span> 
+            Powered By <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <span aria-label="hidden"> &gt;&gt;</span>
+        </p> 
+    </footer>
+</body>
+</html>
