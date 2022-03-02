@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto:ital@1&display=swap" rel="stylesheet">
     <title>searchApp</title>
 </head>
 <body>
@@ -18,9 +22,11 @@
                <label for="search" class="offscreen">Enter a search term</label>
                 <input id="search" type="text" autocomplete="off" />
                 <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
-                    x
+                    <i class="fa-regular fa-circle-xmark"></i>
                 </div>
-                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit Button"></button>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit Button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
 
         </section>
@@ -37,10 +43,10 @@
                     
                     <div class="resultContents">
                         <div class="resultImage">
-                            <img src="" alt="Dachsund">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Short-haired-Dachshund.jpg/50px-Short-haired-Dachshund.jpg" alt="Dachsund">
                         </div>
                         <div class="resultText">
-                            <p class="resultDescription"></p>
+                            <p class="resultDescription">The dachshund  (UK:  DAKS-huund, -⁠ənd, -⁠huunt or US:  DAHKS-huunt, -⁠huund, -⁠ənt; German: \"badger...</p>
                         </div>
                     </div>
                 </div>
