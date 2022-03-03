@@ -16,6 +16,7 @@
         width:90vw;
         display: flex;
         border: 2px solid $search-bar-border;
+        border-radius: 500px;
         padding: 0.15rem 0.25rem 0.15rem 0.75rem;
         @include mq(768px){
                 width: 80vh;
@@ -65,4 +66,29 @@
             color:$logo-green;
         }
     }
+    .clear:hover,.clear:focus{
+        i{
+            color:$logo-red;
+        }
+    }
+    .searchButton{
+        @include mq(768px){
+            padding-left: 1 rem;
+        }
+
+    }
+    .clear{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $stats-color;
+        border-right: thin solid $clear-button-color !important;
+        @include mq(768px){
+            padding:0 1 rem;
+        }
+    }
+    .searchBar:hover{
+        box-shadow: 0 2px 5px 2px $search-bar-border;
+    }
+
 }
