@@ -72,17 +72,19 @@
         }
     }
     .searchButton{
+        padding-left: 0.1rem;
         @include mq(768px){
             padding-left: 1 rem;
         }
 
     }
     .clear{
-        display: flex;
+         
         justify-content: center;
         align-items: center;
+        padding: 0 0.5rem;
         color: $stats-color;
-        border-right: thin solid $clear-button-color !important;
+        border-right: thin solid $clear-button-color;
         @include mq(768px){
             padding:0 1 rem;
         }
