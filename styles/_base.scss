@@ -20,7 +20,7 @@ $font-stack: "Roboto", Arial, sans-serif;
 @mixin flexColumn {
     @extend %flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 @mixin flexCenter{
     @extend %flex;
@@ -49,9 +49,11 @@ html, body{
 
 main{
     @include flexColumn;
-    min-height: calc(100vh-60px);
+    min-height: calc(100vh - 60px);
 }
 footer{
+    // position:fixed;
+    // bottom:0;
     width: 100%;
     height: 60px;
     @include flexCenter;
